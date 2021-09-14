@@ -2,19 +2,16 @@ import discord
 import os
 import requests
 import json
-import random
 from replit import db
 from keep_alive import keep_alive
 
 client = discord.Client()
 
-sad_words = ["sad", "depressed", "unhappy", "angry", "miserable", "depressing"]
-
-starter_encouragements = [
-  "Cheer up!",
-  "Hang in there.",
-  "You are a great person / bot!"
-]
+# starter_encouragements = [
+#   "Cheer up!",
+#   "Hang in there.",
+#   "You are a great person / bot!"
+# ]
 
 def get_quote():
   response = requests.get("https://zenquotes.io/api/random")
